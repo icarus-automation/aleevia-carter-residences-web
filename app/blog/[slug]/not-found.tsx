@@ -10,9 +10,8 @@ export default function ArticleNotFound() {
           We couldn't find that story.
         </h1>
         <p className="mt-6 text-body text-muted-foreground">
-          It may have moved, or the link might be off by a letter. Head back to
-          the Journal to browse everything we've written — or come see the homes
-          in person.
+          It may have moved, or the link might be off by a letter. Go back to
+          the Journal, or come see the homes in person.
         </p>
         <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
           <CtaLink href="/blog" variant="solid" arrow={false}>

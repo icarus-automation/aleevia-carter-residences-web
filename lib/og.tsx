@@ -21,7 +21,7 @@ import { SITE } from "./site";
 /** 1200×630 is the universally safe card size across every network. */
 export const OG_SIZE = { width: 1200, height: 630 } as const;
 export const OG_CONTENT_TYPE = "image/png" as const;
-export const OG_ALT = `${SITE.name} — ${SITE.tagline}`;
+export const OG_ALT = `${SITE.name}. ${SITE.tagline}`;
 
 /** Brand palette, converted from the `oklch()` tokens Satori can't parse. */
 export const OG = {

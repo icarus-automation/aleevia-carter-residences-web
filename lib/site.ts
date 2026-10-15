@@ -13,9 +13,10 @@ export const SITE = {
   url:
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://aleeviacarterresidences.com",
   tagline: "Your Haven in the Heart of the City",
-  subtitle: "A home built for a life without limits.",
+  subtitle:
+    "One- and two-bedroom loft homes on E. Rodriguez Street, Pasay City.",
   description:
-    "A seven-storey Japandi residence in the heart of Pasay City. Thoughtful one- and two-bedroom loft homes, curated amenities, and a low-friction way to book a private viewing.",
+    "A seven-storey Japandi building in Pasay City with 85 one- and two-bedroom loft homes. Book a private viewing on-site or over Google Meet.",
 } as const;
 
 /**
@@ -40,7 +41,7 @@ export const CONTACT = {
   address: `${ADDRESS_LINES[0]}, ${ADDRESS_LINES[1]}`,
   /** The postal form, country included. */
   addressFull: ADDRESS_LINES.join(", "),
-  hours: "7 AM – 4 PM, Monday to Saturday",
+  hours: "7 AM to 4 PM, Monday to Saturday",
   hoursNote: "Messages on Facebook answered around the clock.",
   // Official Facebook page.
   facebook: "https://www.facebook.com/profile.php?id=61592195754339",

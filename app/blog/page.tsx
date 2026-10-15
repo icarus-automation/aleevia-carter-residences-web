@@ -26,7 +26,7 @@ const PAGE_SIZE = 9;
 export const metadata: Metadata = {
   title: "Journal",
   description:
-    "Design notes, neighbourhood guides, and a closer look at life inside Aleevia Carter Residences.",
+    "Posts about the building and the neighbourhood around E. Rodriguez Street.",
   alternates: { canonical: "/blog" },
 };
 
@@ -77,8 +77,8 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
               <span className="italic text-primary">Aleevia Carter.</span>
             </h1>
             <p className="mt-6 text-body text-muted-foreground">
-              Design notes, neighbourhood guides, and a closer look at life
-              inside the residence.
+              Posts about the building and the neighbourhood around E. Rodriguez
+              Street.
             </p>
           </div>
 
@@ -204,12 +204,12 @@ function EmptyState({
         <h2 className="mt-7 font-heading text-h3 font-normal text-foreground">
           {filtered
             ? `No stories under ${activeTagName} just yet.`
-            : "New stories are on the way."}
+            : "No Journal posts are published yet."}
         </h2>
         <p className="mt-5 text-body text-muted-foreground">
           {filtered
             ? "Nothing here for this topic yet. Browse the full Journal, or come see the homes in person."
-            : "We're putting together our first set of articles. In the meantime, follow along on Facebook or come see the homes in person — we'd love to show you around."}
+            : "Follow along on Facebook, or book a viewing and see the homes in person."}
         </p>
 
         <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">

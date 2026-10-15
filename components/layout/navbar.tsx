@@ -188,11 +188,11 @@ export function Navbar({
               <div className="lg:col-span-4 lg:border-r lg:border-border lg:pr-12">
                 <Kicker tone="gold">Financing</Kicker>
                 <p className="mt-5 font-heading text-h4 font-light text-foreground">
-                  Owning a home here, made simple.
+                  Pag-IBIG or Chinabank.
                 </p>
                 <p className="mt-4 max-w-[34ch] text-small text-muted-foreground">
-                  Plan your purchase with Pag-IBIG or our accredited bank
-                  partner — we'll guide you through every step.
+                  Plan the purchase with Pag-IBIG or Chinabank. We'll help you
+                  apply.
                 </p>
               </div>
 

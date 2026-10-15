@@ -19,8 +19,8 @@ export function AboutSection() {
             {/* Both measures land on the same right edge — the lead's ch is
                   wider than the body's, so the counts differ deliberately. */}
             <p className="max-w-[44ch] text-lead font-light text-foreground/80">
-              {SITE.name} is a seven-storey building at {CONTACT.address} —
-              eighty-five one- and two-bedroom loft homes above two levels of
+              {SITE.name} is a seven-storey building at {CONTACT.address}.
+              Eighty-five one- and two-bedroom loft homes above two levels of
               parking.
             </p>
             <p className="mt-6 max-w-[62ch] text-body text-muted-foreground">

@@ -13,7 +13,7 @@ type CtaBandProps = {
 
 export function CtaBand({
   title = "Come see if it feels like home.",
-  body = "Book a private viewing and we'll walk you through it, no pressure. Or browse the brochure and take your time.",
+  body = "Book a private viewing and we'll walk you through it. Or browse the brochure and take your time.",
   image = "/assets/amenities/roof-deck-lounge.png",
   imageAlt = "The Aleevia Carter roofdeck lounge at golden hour, parasols and lounge seating against the skyline.",
 }: CtaBandProps) {

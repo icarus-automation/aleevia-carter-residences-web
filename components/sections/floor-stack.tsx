@@ -76,7 +76,7 @@ const FLOORS: Floor[] = [
 const TOTALS = [
   { label: "Residences", value: "85" },
   { label: "Parking slots", value: "38" },
-  { label: "Home sizes", value: "40–60 sqm" },
+  { label: "Home sizes", value: "40 to 60 sqm" },
 ];
 
 /** The widest plate, so every bar reads as a share of the building's largest level. */
@@ -114,8 +114,8 @@ export function FloorStack() {
             <span className="italic text-gold">floor by floor.</span>
           </h2>
           <p className="mt-6 text-body text-emerald-foreground/75">
-            Two levels of parking below, five levels of homes above — seventeen
-            on each.
+            Two levels of parking below, five levels of homes above. Seventeen
+            homes on each residential floor.
           </p>
 
           <dl className="mt-10">

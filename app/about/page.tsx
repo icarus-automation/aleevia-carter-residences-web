@@ -13,7 +13,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "What Aleevia Carter Residences actually is — a seven-storey building on E. Rodriguez Street in Pasay City holding 85 one- and two-bedroom loft homes, set out floor by floor.",
+    "Aleevia Carter Residences is a seven-storey building on E. Rodriguez Street in Pasay City. 85 one- and two-bedroom loft homes, set out floor by floor.",
   alternates: { canonical: "/about" },
 };
 
@@ -41,7 +41,7 @@ export default function AboutPage() {
       <AboutRecord />
       <CtaBand
         title="Want to see it in person?"
-        body="Book a private viewing and we'll show you the model unit, the amenities, and the neighbourhood — no pressure."
+        body="Book a private viewing and we'll show you the model unit, the amenities, and the neighbourhood."
       />
     </>
   );

@@ -28,21 +28,20 @@ export const metadata: Metadata = {
 const WHAT_TO_EXPECT = [
   {
     icon: CalendarClock,
-    title: "A guided walkthrough",
+    title: "A walkthrough",
     description:
-      "An unhurried tour of the model unit, the amenities, and the neighbourhood with a dedicated specialist.",
+      "The model unit, the shared amenities, and the street around the building.",
   },
   {
     icon: Clock3,
-    title: "Flexible timing",
-    description:
-      "Reschedule or cancel up to 24 hours before your slot — no questions asked.",
+    title: "Change the time",
+    description: "Reschedule or cancel up to 24 hours before your slot.",
   },
   {
     icon: Video,
-    title: "On-site or on Google Meet",
+    title: "On-site or Google Meet",
     description:
-      "Prefer to stay home? Every booking comes with a Google Meet link, so we can host the tour live over video.",
+      "Every booking includes a Google Meet link if you would rather tour on video.",
   },
 ];
 
@@ -88,9 +87,8 @@ export default async function ContactsPage() {
               <span className="italic text-primary">tour.</span>
             </h1>
             <p className="mt-6 text-body text-muted-foreground">
-              Pick a time that suits you and a specialist will walk you through
-              the model unit, the amenities, and the life that defines Aleevia
-              Carter.
+              Pick a time. Someone from the team will walk you through the model
+              unit and the amenities.
             </p>
           </div>
         </div>

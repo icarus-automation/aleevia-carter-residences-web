@@ -34,7 +34,7 @@ export default function PagIbigPage() {
           </div>
           <p className="max-w-[38ch] text-small text-muted-foreground">
             Drag your income to estimate what you could borrow toward a home at
-            Aleevia Carter — using the standard Pag-IBIG computation.
+            Aleevia Carter, using the standard Pag-IBIG computation.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export default function PagIbigPage() {
 
       <CtaBand
         title="Found a number that works?"
-        body="Book a viewing and we'll walk you through the homes — and the financing — in person."
+        body="Book a viewing and we'll walk you through the homes and the financing in person."
       />
     </>
   );

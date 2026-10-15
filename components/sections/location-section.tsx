@@ -22,7 +22,7 @@ const CATEGORIES: Category[] = [
       { name: "Puregold Libertad", distance: "0.9 km", time: "4 min" },
       { name: "H.A Grocery Store", distance: "1.0 km", time: "5 min" },
       { name: "Metro Supermarket", distance: "1.5 km", time: "7 min" },
-      { name: "Liana's Supermarket — Taft", distance: "1.8 km", time: "8 min" },
+      { name: "Liana's Supermarket, Taft", distance: "1.8 km", time: "8 min" },
       { name: "Baclaran Market", distance: "4.9 km", time: "16 min" },
     ],
   },
@@ -32,7 +32,7 @@ const CATEGORIES: Category[] = [
     places: [
       { name: "Victory Pasay Mall", distance: "1.1 km", time: "6 min" },
       { name: "Metropoint Mall", distance: "1.9 km", time: "9 min" },
-      { name: "SM Mall of Asia", distance: "4.5 km", time: "15–20 min" },
+      { name: "SM Mall of Asia", distance: "4.5 km", time: "15 to 20 min" },
       { name: "S Maison", distance: "5.0 km", time: "22 min" },
       { name: "Newport Mall", distance: "5.5 km", time: "25 min" },
     ],
@@ -89,7 +89,7 @@ const CATEGORIES: Category[] = [
         time: "9 min",
       },
       {
-        name: "Arellano University — Jose Abad Santos",
+        name: "Arellano University, Jose Abad Santos",
         distance: "2.3 km",
         time: "11 min",
       },
@@ -133,12 +133,12 @@ export function LocationSection() {
             id="location-heading"
             className="mt-6 font-heading text-h2 font-light text-balance text-foreground"
           >
-            Come home here.
+            Pasay City, on E. Rodriguez Street.
           </h2>
           <p className="mt-8 text-body text-muted-foreground">
-            Aleevia Carter sits along the Rodriguez corridor, one of Pasay
-            City's most connected pockets — minutes from the business districts,
-            the bay, and the airport, with the whole metro at your doorstep.
+            The building is on E. Rodriguez Street. Metro Pasay Hospital is 0.7
+            km away. SM Mall of Asia is 4.5 km. Times below are from the front
+            door.
           </p>
         </Reveal>
 
@@ -157,7 +157,7 @@ export function LocationSection() {
         <div className="mt-16 md:mt-20">
           <Reveal className="flex items-baseline justify-between gap-6">
             <h3 className="font-heading text-h4 font-normal text-foreground">
-              Close to the city, closer to home.
+              What's nearby.
             </h3>
           </Reveal>
 

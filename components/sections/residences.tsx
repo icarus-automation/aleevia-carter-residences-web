@@ -32,9 +32,9 @@ const UNITS: Unit[] = [
     key: "aleevia-one",
     tab: "1-Bedroom",
     name: "1-Bedroom Loft",
-    subtitle: "A seamless live-work home",
+    subtitle: "Live and work in 40 sqm",
     specs: "1 Bed · 1 Bath · 40 sqm · Loft",
-    body: "Forty square metres that live larger than they measure. Level one opens into a wide living area with a built-in work desk set by the window; upstairs, the mezzanine becomes a private owner's suite with a queen bed, a long vanity, and an en-suite bath. The hidden kitchen joinery keeps everything calm and uncluttered — a flexible, open home you can make your own.",
+    body: "Level one is a living area with a built-in desk by the window. The mezzanine is a private suite: queen bed, long vanity, en-suite bath. The kitchen is hidden in the joinery.",
     images: [
       {
         src: "/assets/interiors/unit-1/bedroom-front-view.png",
@@ -58,9 +58,9 @@ const UNITS: Unit[] = [
     key: "aleevia-two",
     tab: "2-Bedroom",
     name: "2-Bedroom Loft",
-    subtitle: "Made to be the heart of your story",
+    subtitle: "Open plan, 60 sqm",
     specs: "2 Bed · 1 Bath · 60 sqm · Loft",
-    body: "Built for people who love to host. Level one is an open plan centred on a generous L-shaped sofa and a four-seater dining table; the mezzanine adds an entertainment loft that can become a media room, a guest lounge, or a quiet office nook with built-in shelving. Sixty square metres with a clear line between the busy day and the restful evening.",
+    body: "Level one centres on an L-shaped sofa and a four-seater table. The mezzanine can be a media room, a guest lounge, or a desk with built-in shelves. Living floor below, quieter rooms above.",
     images: [
       {
         src: "/assets/interiors/unit-7/open-plan-living-area.png",
@@ -199,11 +199,12 @@ export function Residences() {
             id="residences-heading"
             className="mt-6 font-heading text-h2 font-light text-balance text-foreground"
           >
-            Two homes. One careful idea.
+            One-bedroom and two-bedroom lofts.
           </h2>
           <p className="mt-6 text-body text-muted-foreground">
-            Forty- and sixty-square-metre lofts that share a single DNA: warm
-            materials, honest proportions, and light wherever it can reach.
+            The one-bedroom loft is 40 square metres. The two-bedroom loft is 60
+            square metres. Both use timber joinery, built-in storage, and
+            windows on the street side.
           </p>
         </Reveal>
 
@@ -290,7 +291,7 @@ export function Residences() {
                         </figcaption>
                         <Image
                           src={plan.src}
-                          alt={`${unit.name} — ${plan.label} floor plan`}
+                          alt={`${unit.name}, ${plan.label} floor plan`}
                           width={600}
                           height={600}
                           className="h-auto w-full object-contain"

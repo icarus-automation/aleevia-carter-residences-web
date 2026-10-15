@@ -14,12 +14,11 @@ export function FinancingIntro() {
           id="financing-heading"
           className="mt-6 font-heading text-h2 font-light text-balance text-foreground"
         >
-          Owning here, made simple.
+          Pag-IBIG or Chinabank.
         </h2>
         <p className="mt-8 max-w-[52ch] text-body text-muted-foreground">
-          Most homes are available to purchase, and we'll help you arrange
-          financing — through Pag-IBIG or our bank partners — one clear step at
-          a time.
+          Most homes are for sale. Use the calculator for a Pag-IBIG estimate,
+          or read the Chinabank requirements. We'll help you apply.
         </p>
       </Reveal>
 
@@ -53,8 +52,8 @@ export function FinancingIntro() {
 
       <Reveal>
         <p className="mt-14 max-w-[46ch] text-body text-muted-foreground md:mt-20">
-          Prefer to rent? A limited number of homes are open to lease — tell us
-          what you're looking for and we'll let you know what's available.
+          A few homes are open to lease. Tell us the size you need and we'll say
+          what's available.
         </p>
       </Reveal>
     </section>

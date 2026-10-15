@@ -190,11 +190,11 @@ export function AffordabilityCalculator(config: CalculatorConfig) {
         </div>
         <div className="border-t border-emerald-foreground/15 pt-8">
           <p className="text-caption text-emerald-foreground/60">
-            Estimates only, using the standard {lenderName} computation — not a
-            loan offer.
+            Estimates only, using the standard {lenderName} computation. This is
+            not a loan offer.
           </p>
           <CtaLink href="/contacts" variant="outlineLight" className="mt-6">
-            Talk to a specialist
+            Book a viewing
           </CtaLink>
         </div>
       </div>

@@ -37,7 +37,7 @@ export function Reception() {
           </h2>
           <p className="mt-5 text-body text-muted-foreground">
             Every other room on this site sits inside somebody's home. This one
-            doesn't — reception and lounge seating, opening onto the building's
+            does not. Reception and lounge seating, opening onto the building's
             admin office.
           </p>
         </Reveal>

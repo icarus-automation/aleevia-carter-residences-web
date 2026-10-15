@@ -52,7 +52,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
             id="testimonials-heading"
             className="mt-6 font-heading text-h2 font-light text-balance text-foreground"
           >
-            In their own words.
+            What people have said.
           </h2>
         </div>
         {!isSingle && (

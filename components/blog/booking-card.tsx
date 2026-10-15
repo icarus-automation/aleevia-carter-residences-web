@@ -17,8 +17,7 @@ export function BookingCard({ className }: { className?: string }) {
         Come see it in person.
       </p>
       <p className="mt-3 text-small leading-relaxed text-muted-foreground">
-        Tour the homes and amenities on-site or over Google Meet — no pressure,
-        we'd just love to show you around.
+        Tour the homes and amenities on-site or over Google Meet.
       </p>
       <CtaLink
         href={PRIMARY_CTA.href}

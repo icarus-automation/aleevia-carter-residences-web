@@ -26,7 +26,7 @@ export default function ChinabankPage() {
       <ChinabankLoan />
       <CtaBand
         title="Ready to start?"
-        body="Book a viewing and our specialists will guide you through pre-qualification, step by step."
+        body="Book a viewing and we'll start Chinabank pre-qualification with you."
       />
     </>
   );

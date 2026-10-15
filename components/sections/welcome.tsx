@@ -15,21 +15,19 @@ export function Welcome() {
           <Kicker tone="gold">The Property</Kicker>
           <h2
             id="property-heading"
-            className="mt-6 max-w-[15ch] font-heading text-h2 font-light text-balance text-foreground"
+            className="mt-6 max-w-[22ch] font-heading text-h2 font-light text-balance text-foreground"
           >
-            Living, without{" "}
-            <span className="italic text-primary">boundaries.</span>
+            Eighty-five loft homes on{" "}
+            <span className="italic text-primary">one street.</span>
           </h2>
           <p className="mt-8 max-w-[48ch] text-body text-muted-foreground">
-            Aleevia Carter Residences is a small building with a simple idea:
-            that a home should put your life first. Inside, sophisticated
-            comfort meets a quiet sanctuary — warm wood, organic textures, and
-            rooms that are genuinely easy to live in, day to day.
+            Aleevia Carter Residences is a seven-storey building in Pasay City.
+            The rooms use warm timber, stone, and built-in joinery.
           </p>
           <p className="mt-5 max-w-[48ch] text-body text-muted-foreground">
-            From the sage-walled study made for deep focus to the stone-calm of
-            the bath, every detail is considered. Nothing is louder than it
-            needs to be.
+            The one-bedroom loft has a built-in desk by the window. The bath is
+            stone. The kitchen sits in the joinery so the living floor stays
+            clear.
           </p>
           <CtaLink href="/#residences" variant="link" className="mt-8">
             Explore the residences

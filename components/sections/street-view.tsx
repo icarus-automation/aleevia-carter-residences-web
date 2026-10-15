@@ -22,7 +22,7 @@ export function StreetView() {
               This is the building as you'd meet it on E. Rodriguez Street.
             </p>
             <p className="mt-5 max-w-[48ch] text-body text-emerald-foreground/75">
-              A real street-level view — the blue façade, the entrance, and the
+              A real street-level view. The blue façade, the entrance, and the
               homes rising above it.
             </p>
           </Reveal>

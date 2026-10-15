@@ -8,7 +8,7 @@ Turns the display-only concierge badge (`components/concierge-chat.tsx`) into a 
 - Instant perceived response: tokens render as they stream; typing indicator before first token.
 - Never a dead end: every failure state routes to a human (Analiza's phone, Facebook, `/contacts`).
 - Zero-risk rollout: with `NEXT_PUBLIC_API_BASE_URL` unset the widget renders the current passive badge, unchanged.
-- DESIGN.md compliance: no second competing emerald CTA (the badge is the already-sanctioned emerald element; the panel surface is card/cream), shadows only as response to state, reduced-motion honored everywhere.
+- Design-system compliance: no second competing emerald CTA (the badge is the already-sanctioned emerald element; the panel surface is card/cream), shadows only as response to state, reduced-motion honored everywhere.
 
 ## Config
 
@@ -81,9 +81,9 @@ type ConciergeStatus = "idle" | "streaming" | "error" | "rate-limited";
 - **Typing indicator**: three pulsing gold dots while streaming with empty draft; static under reduced motion.
 - **Suggestion chips** (empty transcript only): "Tell me about the 1- and 2-bedroom lofts" · "What's nearby in Pasay?" · "How do I book a viewing?" — tap sends immediately.
 - **Input row**: `ui/Input` with `h-11 text-small` override (44px touch target) + `ui/Button size="icon"` send (`SendHorizonal`, `aria-label="Send message"`), native `<form onSubmit>`, Enter sends, disabled while streaming/empty, `maxLength=2000`.
-- **Disclaimer** under input, `text-caption text-muted-foreground`: "Automated concierge — answers may be imperfect. For anything final, talk to our team."
-- **Error card** (`status === "error"`): "The concierge is resting." + tel link (`CONTACT.phoneHref`), Facebook link, `/contacts` CtaLink ("Book a viewing").
-- **Rate-limit notice** (`"rate-limited"`): transient inline line "A moment, please — you're sending messages quickly."; input kept.
+- **Disclaimer** under input, `text-caption text-muted-foreground`: "This is an automated concierge. For anything final, talk to our team."
+- **Error card** (`status === "error"`): "The concierge is unavailable." + tel link (`CONTACT.phoneHref`), Facebook link, `/contacts` CtaLink ("Book a viewing").
+- **Rate-limit notice** (`"rate-limited"`): transient inline line "You're sending messages quickly. Wait a moment and try again."; input kept.
 - **Motion**: panel enter `{opacity:0, y:12, scale:0.98} → {opacity:1, y:0, scale:1}` 0.3s ease `[0.22,1,0.36,1]`, exit mirrors, via `AnimatePresence`. Reduced motion: opacity-only (repo idiom), ping/typing dots static.
 
 ## Accessibility
@@ -93,7 +93,7 @@ type ConciergeStatus = "idle" | "streaming" | "error" | "rate-limited";
 3. Open → focus input (`preventScroll`); Esc (panel `onKeyDown`), close button, or FAB toggle → focus returns to FAB.
 4. One visually-hidden `aria-live="polite" aria-atomic="true"` region updated only when a reply completes (never per token); error/rate-limit notices announce there too.
 5. Messages region: `tabIndex={0}` + `aria-label="Conversation"` so keyboard users can scroll it; **`data-lenis-prevent`** so Lenis (root smooth-scroll) doesn't swallow wheel events inside the panel.
-6. Native `button`/`form`/`input` everywhere; icons `aria-hidden`; contrast pairs all AA per DESIGN.md.
+6. Native `button`/`form`/`input` everywhere; icons `aria-hidden`; contrast pairs all AA.
 
 ## Edge cases
 

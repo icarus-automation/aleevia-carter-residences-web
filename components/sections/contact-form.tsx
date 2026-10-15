@@ -226,7 +226,7 @@ export function ContactForm() {
     failWith(
       {},
       ourFault
-        ? ["Something went wrong on our end — your message was not sent."]
+        ? ["Something went wrong on our end. Your message was not sent."]
         : result.messages,
       result.status !== 429,
     );
@@ -248,9 +248,8 @@ export function ContactForm() {
               <span className="italic text-primary">message.</span>
             </h2>
             <p className="mt-6 text-body text-muted-foreground">
-              Ask about unit sizes, payment terms, or availability — anything
-              you'd like to know before you visit. Leave your details and a
-              specialist will take it from there.
+              Ask about unit sizes, payment terms, or availability. Leave your
+              details and someone from the team will reply.
             </p>
           </div>
 
@@ -575,11 +574,11 @@ function SuccessPanel() {
         tabIndex={-1}
         className="mt-6 font-heading text-h4 font-normal text-foreground focus:outline-none"
       >
-        Thank you — your message is with our team.
+        Thank you. Your message is with our team.
       </h3>
       <p className="mt-3 max-w-[52ch] text-body text-muted-foreground">
-        A specialist will follow up using the details you left. We're at the
-        showroom {CONTACT.hours}, so if you'd rather not wait, reach{" "}
+        Someone from the team will reply using the details you left. We're at
+        the showroom {CONTACT.hours}. If you'd rather not wait, reach{" "}
         {CONTACT.contactName} directly.
       </p>
       <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">

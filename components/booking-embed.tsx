@@ -22,9 +22,9 @@ export function BookingEmbed() {
           Online booking is being set up.
         </h3>
         <p className="mt-3 max-w-[44ch] text-body text-muted-foreground">
-          Our Google Calendar scheduler goes live shortly — every booking comes
-          with a Google Meet link. In the meantime, reach {CONTACT.contactName}{" "}
-          directly and we'll lock in a time that suits you.
+          The Google Calendar scheduler is not live yet. Every confirmed booking
+          includes a Google Meet link. Until then, call or email{" "}
+          {CONTACT.contactName} to pick a time.
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
           <CtaLink href={CONTACT.phoneHref} variant="solid" arrow={false}>

@@ -227,11 +227,11 @@ function EmptyRoster() {
         <Users className="size-5" aria-hidden />
       </span>
       <h3 className="mt-6 font-heading text-h4 font-normal text-foreground">
-        Our agents will be listed here shortly.
+        No agents are listed yet.
       </h3>
       <p className="mt-3 max-w-[52ch] text-body text-muted-foreground">
-        We're putting the team's details together. In the meantime, pick a time
-        on the calendar above or reach {CONTACT.contactName} directly.
+        Pick a time on the calendar above, or reach {CONTACT.contactName}{" "}
+        directly.
       </p>
       <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
         <CtaLink href={CONTACT.phoneHref} variant="solid" arrow={false}>
@@ -250,7 +250,7 @@ function EmptyRoster() {
 function NoMatches({ term, onClear }: { term: string; onClear: () => void }) {
   return (
     <p className="mt-12 border-t border-border/70 pt-8 text-body text-muted-foreground md:mt-14">
-      No agents match &ldquo;{term}&rdquo;.{" "}
+      No agents match "{term}".{" "}
       <button
         type="button"
         onClick={onClear}

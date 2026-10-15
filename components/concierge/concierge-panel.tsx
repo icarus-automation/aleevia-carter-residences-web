@@ -71,7 +71,7 @@ export function ConciergePanel({ panelId, onClose }: ConciergePanelProps) {
       {status === "error" && (
         <div className="border-t border-border bg-secondary/40 px-4 py-3">
           <p className="text-small text-foreground">
-            The concierge is resting.
+            The concierge is unavailable.
           </p>
           <p className="mt-1 text-caption text-muted-foreground">
             Call or text{" "}
@@ -103,7 +103,7 @@ export function ConciergePanel({ panelId, onClose }: ConciergePanelProps) {
       )}
       {status === "rate-limited" && (
         <p className="border-t border-border px-4 py-2.5 text-caption text-muted-foreground">
-          A moment, please — you're sending messages quickly.
+          You're sending messages quickly. Wait a moment and try again.
         </p>
       )}
 
@@ -139,7 +139,7 @@ export function ConciergePanel({ panelId, onClose }: ConciergePanelProps) {
       </form>
 
       <p className="border-t border-border px-4 py-2.5 text-center text-caption text-muted-foreground">
-        Automated concierge — for anything final, talk to our team.
+        This is an automated concierge. For anything final, talk to our team.
       </p>
 
       <div aria-live="polite" aria-atomic="true" className="sr-only">

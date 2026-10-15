@@ -18,32 +18,32 @@ type Amenity = {
 
 const AMENITIES: Amenity[] = [
   {
-    eyebrow: "Elevated Vitality",
-    title: "Panoramic Gym",
-    desc: "A bright, energising fitness centre with professional-grade equipment and a warm wood-slatted ceiling — push your limits with the horizon in view.",
+    eyebrow: "Fitness",
+    title: "Gym",
+    desc: "Fitness equipment under a wood-slatted ceiling, next to windows on the city.",
     img: "/assets/amenities/gym.png",
-    alt: "The panoramic gym at Aleevia Carter, wood-slatted ceiling and equipment beside floor-to-ceiling windows.",
+    alt: "The gym at Aleevia Carter, wood-slatted ceiling and equipment beside floor-to-ceiling windows.",
   },
   {
-    eyebrow: "The Spirit of Play",
-    title: "Rooftop Sports Court",
-    desc: "An open-air, multi-purpose court on the roof — a friendly match or a morning shoot-around under the wide city sky.",
+    eyebrow: "Roof",
+    title: "Sports court",
+    desc: "An open-air multi-purpose court. Use it for a match or a morning shoot-around.",
     img: "/assets/amenities/sports-court.png",
     alt: "The rooftop multi-purpose sports court under an open sky.",
   },
   {
-    eyebrow: "Sunset Socials",
-    title: "Roofdeck Lounge",
-    desc: "An expansive rooftop lounge with plush seating and architectural umbrellas — the vantage point for golden-hour gatherings and quiet evenings.",
+    eyebrow: "Roofdeck",
+    title: "Lounge",
+    desc: "Seating and umbrellas on the timber deck, open in the evening, with a view of the skyline.",
     img: "/assets/amenities/roof-deck-lounge.png",
     alt: "The roofdeck lounge with timber decking, lounge seating, and parasols at dusk.",
   },
   {
-    eyebrow: "Effortless Convenience",
-    title: "Laundry Suite",
-    desc: "A high-end laundry suite with modern appliances and ample timber cabinetry — everyday home management, made to feel light.",
+    eyebrow: "Shared",
+    title: "Laundry",
+    desc: "Stacked machines and timber cabinetry. Wash and dry without leaving the building.",
     img: "/assets/amenities/laundry-room.png",
-    alt: "The shared laundry suite with stacked machines and warm wood shelving.",
+    alt: "The shared laundry with stacked machines and warm wood shelving.",
   },
 ];
 
@@ -58,13 +58,12 @@ export function Amenities() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-2xl"
         >
-          <Kicker tone="gold">Lifestyle Features</Kicker>
+          <Kicker tone="gold">Amenities</Kicker>
           <h2 className="mt-6 font-heading text-h2 font-light text-balance text-foreground">
-            Crafted for limitless living.
+            Gym, court, lounge, and laundry.
           </h2>
           <p className="mt-6 max-w-[52ch] text-body text-muted-foreground">
-            Amenities as considered as the homes themselves — a Japandi
-            sanctuary that blurs the line between quiet focus and easy play.
+            Four shared rooms. Same timber and stone as the homes.
           </p>
         </motion.div>
       </div>

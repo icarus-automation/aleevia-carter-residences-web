@@ -91,9 +91,9 @@ export function ChinabankLoan() {
                 <span className="italic text-primary">housing loan.</span>
               </h1>
               <p className="mt-6 max-w-[52ch] text-body text-muted-foreground">
-                Finance your home at Aleevia Carter through one of the country's
-                most trusted banks. Review the eligibility, documents, and
-                process below — then talk to our specialists.
+                Finance a home at Aleevia Carter with a Chinabank housing loan.
+                Eligibility, documents, rates, and steps are below. Then book a
+                viewing and we'll start pre-qualification.
               </p>
               <div className="mt-10">
                 <CtaLink href="/contacts" variant="solid">

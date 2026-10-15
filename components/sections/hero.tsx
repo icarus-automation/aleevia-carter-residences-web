@@ -89,8 +89,8 @@ export function Hero() {
             transition={{ duration: 0.9, ease: EASE, delay: 0.38 }}
             className="mt-7 max-w-[46ch] text-lead font-light text-background/90"
           >
-            A small Japandi residence on E. Rodriguez Street — one- and
-            two-bedroom loft homes built for a life without limits.
+            A seven-storey Japandi building on E. Rodriguez Street. Lofts of 40
+            and 60 square metres, one and two bedrooms.
           </motion.p>
 
           <motion.div

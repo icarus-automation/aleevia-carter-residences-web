@@ -156,7 +156,7 @@ export function ConciergeMessages({
             </div>
             {message.state === "interrupted" && (
               <p className="mt-1.5 text-caption text-muted-foreground">
-                Connection dropped — try again, or call{" "}
+                The connection dropped. Try again, or call{" "}
                 <a
                   href={CONTACT.phoneHref}
                   className="underline underline-offset-2 hover:text-foreground"

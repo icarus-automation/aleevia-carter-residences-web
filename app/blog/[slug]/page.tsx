@@ -185,7 +185,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       <CtaBand
         title="Come see it for yourself."
-        body="Book a private viewing and we'll walk you through the homes and amenities — on-site or live over Google Meet, at your pace."
+        body="Book a private viewing and we'll walk you through the homes and amenities, on-site or over Google Meet."
       />
     </>
   );

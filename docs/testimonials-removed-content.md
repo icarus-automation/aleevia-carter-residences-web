@@ -9,9 +9,9 @@ Captured from commit `24f3387`, 2026-08-18.
 
 ---
 
-## ⚠️ Read this before seeding any of it
+## Read this before seeding any of it
 
-`PRODUCT.md` line 86 is explicit: **these testimonials are invented.**
+The project's former `PRODUCT.md` (since removed; see git history) was explicit: **these testimonials are invented.**
 
 > **Resident testimonials and the resident video.** `components/sections/testimonials.tsx`
 > carries invented names ("Jonathan Pierce", "Samantha Hayes", "David Lim") and an
@@ -21,8 +21,8 @@ Captured from commit `24f3387`, 2026-08-18.
 
 So this file is an **archive, not a seeding backlog**. Copying these rows into
 `prisma/seed-content.ts` would move fabricated quotes from a placeholder in the
-codebase into the CMS, where they read as client-approved published content —
-strictly worse than where they were. Seed them only if the owner confirms a real
+codebase into the CMS, where they read as client-approved published content.
+That is strictly worse than leaving them here. Seed them only if the owner confirms a real
 person actually said the words and consented to attribution.
 
 ---
@@ -46,7 +46,7 @@ person actually said the words and consented to attribution.
 ## Video cards (no quote copy existed)
 
 Both were removed with the video treatment. They carried an author, a role and a
-video title — **never a quote** — so neither maps onto the `Testimonial` shape,
+video title, never a quote, so neither maps onto the `Testimonial` shape,
 which is `{ id, quote, authorName, authorTitle }` and has no video field. Adding
 them to the API would require writing quotes that nobody has said.
 
@@ -69,12 +69,12 @@ them to the API would require writing quotes that nobody has said.
 | Role | `Interior Design Weekly` |
 
 **The video itself:** YouTube id `Obaq2ddTYRs`, used for both cards. Stock reel,
-unrelated to the project — nothing to preserve. The embed, the thumbnail `<img>`
+unrelated to the project. Nothing to preserve. The embed, the thumbnail `<img>`
 and the play button were deleted with the section rewrite.
 
 ---
 
-## Already on the backend — no action
+## Already on the backend
 
 ### Maria Santos
 
@@ -89,7 +89,7 @@ no migration. Kept here only so the before/after set is complete.
 > The mezzanine changes everything. Natural light pours down through the loft and
 > the living area becomes somewhere you actually want to spend your evenings.
 
-Note that `PRODUCT.md` does not name Maria Santos among the invented three, but it
-does state that no resident quote has ever been collected. Whether this
+Note that the former `PRODUCT.md` did not name Maria Santos among the invented three, but it
+did state that no resident quote has ever been collected. Whether this
 publication attribution is real is a question for the owner, not something the
-landing site can settle — and it is already live in the CMS either way.
+landing site can settle. It is already live in the CMS either way.
