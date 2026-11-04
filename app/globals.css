@@ -101,7 +101,7 @@
 
 /* Light is the committed theme: a curious visitor on a phone in everyday indoor
    light. A warm cream/marble canvas, sage neutrals, one emerald action voice,
-   and a rare brass-gold accent — the Japandi world of the brochure. */
+   and a rare brass-gold accent — the modern minimalist world of the brochure. */
 :root {
   --background: oklch(0.965 0.012 92);
   --foreground: oklch(0.255 0.012 140);
@@ -141,7 +141,7 @@
   --radius: 0.375rem;
 }
 
-/* Warm dusk: the same Japandi room after dark. Carried for shadcn parity only;
+/* Warm dusk: the same minimalist room after dark. Carried for shadcn parity only;
    light remains the committed default (no theme toggle ships). */
 .dark {
   --background: oklch(0.205 0.014 165);
@@ -236,7 +236,7 @@
   }
 
   /* Limewashed plaster: the faint tooth of a hand-finished wall, so a brand
-     colour reads as a surface rather than a flat fill. Japandi rooms are all
+     colour reads as a surface rather than a flat fill. Minimalist rooms are all
      matte lime, clay and paper — a dead hex is the one thing they never are.
 
      Built from an inline SVG turbulence tile rather than an image: no network

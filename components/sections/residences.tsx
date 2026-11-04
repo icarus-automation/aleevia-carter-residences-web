@@ -114,7 +114,9 @@ function UnitCarousel({ unit }: { unit: Unit }) {
         <CarouselContent className="-ml-0">
           {unit.images.map((image) => (
             <CarouselItem key={image.src} className="pl-0">
-              <div className="relative aspect-4/3 w-full overflow-hidden rounded-md bg-muted md:aspect-[16/11]">
+              {/* Framed at the renders' native 3382×1985 ratio so object-cover
+                  never trims the corner "Artist's perspective" badge. */}
+              <div className="relative aspect-[3382/1985] w-full overflow-hidden rounded-md bg-muted">
                 <Image
                   src={image.src}
                   alt={image.alt}

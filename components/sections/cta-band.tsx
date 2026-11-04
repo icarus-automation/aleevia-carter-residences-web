@@ -27,11 +27,14 @@ export function CtaBand({
         alt={imageAlt}
         fill
         sizes="100vw"
-        className="-z-10 object-cover"
+        className="-z-10 object-cover object-right-bottom"
       />
+      {/* Anchored bottom-right so the render's corner "Artist's perspective"
+          badge stays in frame at any width; the scrim eases off at that corner
+          (bottom on phones, right side from lg) so the badge stays legible. */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-t from-foreground/90 via-foreground/55 to-foreground/35"
+        className="absolute inset-0 -z-10 bg-gradient-to-t from-foreground/15 via-foreground/65 to-foreground/45 lg:bg-gradient-to-r lg:from-foreground/90 lg:via-foreground/55 lg:to-foreground/15"
       />
 
       <div className="main-container">

@@ -75,19 +75,25 @@ export function Amenities() {
             index={index}
             className="h-[78vh] pb-6 md:h-[82vh]"
           >
-            <div className="relative h-full w-full overflow-hidden rounded-md bg-muted">
-              <Image
-                src={item.img}
-                alt={item.alt}
-                fill
-                sizes="(min-width: 1280px) 80vw, 100vw"
-                className="object-cover"
-              />
+            {/* The render is anchored bottom-right so its printed "Artist's
+                perspective" badge is never cropped. Below lg the copy sits on a
+                solid panel under the image so it can't cover the badge; from lg
+                the image goes full-bleed and the scrim fades out before it. */}
+            <div className="relative flex h-full w-full flex-col overflow-hidden rounded-md bg-foreground">
+              <div className="relative min-h-0 flex-1 lg:absolute lg:inset-0">
+                <Image
+                  src={item.img}
+                  alt={item.alt}
+                  fill
+                  sizes="(min-width: 1280px) 80vw, 100vw"
+                  className="object-cover object-right-bottom"
+                />
+              </div>
               <div
                 aria-hidden
-                className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/25 to-transparent"
+                className="absolute inset-0 hidden bg-gradient-to-r from-foreground/90 via-foreground/60 to-transparent lg:block"
               />
-              <div className="absolute inset-x-0 bottom-0 p-6 md:p-12 lg:p-16">
+              <div className="relative p-6 md:p-10 lg:absolute lg:inset-x-0 lg:bottom-0 lg:p-16">
                 <div className="max-w-2xl">
                   <span
                     aria-hidden

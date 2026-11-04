@@ -30,7 +30,7 @@ export default async function Image() {
           <i style={{ fontStyle: "italic", marginLeft: 16 }}>City</i>
         </>,
       ],
-      chips: ["1 & 2-BR lofts", "Pag-IBIG ready", "Japandi design"],
+      chips: ["1 & 2-BR lofts", "Pag-IBIG ready", "Modern minimalist"],
       cta: "Book a viewing",
       photo,
     }),

@@ -16,7 +16,7 @@ export const SITE = {
   subtitle:
     "One- and two-bedroom loft homes on E. Rodriguez Street, Pasay City.",
   description:
-    "A seven-storey Japandi building in Pasay City with 85 one- and two-bedroom loft homes. Book a private viewing on-site or over Google Meet.",
+    "A seven-storey modern minimalist building in Pasay City with 85 one- and two-bedroom loft homes. Book a private viewing on-site or over Google Meet.",
 } as const;
 
 /**
