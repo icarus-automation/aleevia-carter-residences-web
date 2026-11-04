@@ -45,7 +45,9 @@ export function CoverImage({
       fill
       sizes={sizes}
       priority={priority}
-      className={cn("object-cover", className)}
+      // Official renders print their "Artist's perspective" badge bottom-right;
+      // anchoring there keeps it in frame whatever ratio the slot crops to.
+      className={cn("object-cover object-right-bottom", className)}
     />
   );
 }

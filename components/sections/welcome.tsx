@@ -38,13 +38,15 @@ export function Welcome() {
           delay={0.1}
           className="md:col-span-6 md:col-start-7 lg:col-span-6 lg:col-start-7"
         >
-          <figure className="relative aspect-4/5 w-full overflow-hidden rounded-md bg-muted">
+          {/* Framed at the render's native 907×1080 ratio so object-cover never
+              trims its corner "Artist's perspective" badge. */}
+          <figure className="relative aspect-[907/1080] w-full overflow-hidden rounded-md bg-muted">
             <Image
               src="/assets/interiors/hallway.png"
               alt="A residential corridor at Aleevia Carter, lined with warm timber panelling and lit by a tall window at the far end."
               fill
               sizes="(min-width: 1024px) 45vw, (min-width: 768px) 50vw, 100vw"
-              className="object-cover object-left"
+              className="object-cover"
             />
           </figure>
         </Reveal>
