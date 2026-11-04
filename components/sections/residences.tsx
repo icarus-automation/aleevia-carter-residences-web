@@ -63,6 +63,10 @@ const UNITS: Unit[] = [
     body: "Level one centres on an L-shaped sofa and a four-seater table. The mezzanine can be a media room, a guest lounge, or a desk with built-in shelves. Living floor below, quieter rooms above.",
     images: [
       {
+        src: "/assets/interiors/unit-7/bedroom-front-view.png",
+        alt: "Front view of the 2-Bedroom Loft bedroom with a timber headboard and teal bedding.",
+      },
+      {
         src: "/assets/interiors/unit-7/open-plan-living-area.png",
         alt: "The 2-Bedroom Loft open-plan living area with kitchen joinery, dining space, and a forest-green feature wall.",
       },
@@ -73,10 +77,6 @@ const UNITS: Unit[] = [
       {
         src: "/assets/interiors/unit-7/bedroom-wide-view.png",
         alt: "Wide view of the 2-Bedroom Loft bedroom in soft sage and linen with a low timber bed.",
-      },
-      {
-        src: "/assets/interiors/unit-7/bedroom-front-view.png",
-        alt: "Front view of the 2-Bedroom Loft bedroom with a timber headboard and teal bedding.",
       },
       {
         src: "/assets/interiors/unit-7/bedroom-workspace.png",
