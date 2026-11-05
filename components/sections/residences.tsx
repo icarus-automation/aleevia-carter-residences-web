@@ -24,7 +24,9 @@ type Unit = {
   specs: string;
   body: string;
   images: { src: string; alt: string }[];
-  floorPlans: { label: string; src: string }[];
+  /** Each plan carries its own gold title, so there is no separate label.
+   *  width/height are the file's real pixels, so the frame keeps its ratio. */
+  floorPlans: { src: string; alt: string; width: number; height: number }[];
 };
 
 const UNITS: Unit[] = [
@@ -50,8 +52,18 @@ const UNITS: Unit[] = [
       },
     ],
     floorPlans: [
-      { label: "Level 1", src: "/assets/floor-plans/unit-1-level-1.png" },
-      { label: "Mezzanine", src: "/assets/floor-plans/unit-1-mezzanine.png" },
+      {
+        src: "/assets/floor-plans/unit-1-level-1.png",
+        alt: "Aleevia 1 floor plan, Level 1",
+        width: 1559,
+        height: 1327,
+      },
+      {
+        src: "/assets/floor-plans/unit-1-mezzanine.png",
+        alt: "Aleevia 1 floor plan, Loft",
+        width: 1083,
+        height: 2343,
+      },
     ],
   },
   {
@@ -84,8 +96,18 @@ const UNITS: Unit[] = [
       },
     ],
     floorPlans: [
-      { label: "Level 1", src: "/assets/floor-plans/unit-7-level-1.png" },
-      { label: "Mezzanine", src: "/assets/floor-plans/unit-7-mezzanine.png" },
+      {
+        src: "/assets/floor-plans/unit-7-level-1.png",
+        alt: "Aleevia 2 floor plan, Level 1",
+        width: 1575,
+        height: 1797,
+      },
+      {
+        src: "/assets/floor-plans/unit-7-mezzanine.png",
+        alt: "Aleevia 2 floor plan, Loft",
+        width: 1853,
+        height: 1984,
+      },
     ],
   },
 ];
@@ -215,7 +237,7 @@ export function Residences() {
             role="tablist"
             aria-label="Choose a residence"
             onKeyDown={onTabKey}
-            className="inline-flex gap-1 rounded-md border border-border bg-card p-1.5"
+            className="flex w-full gap-1 rounded-md border border-border bg-card p-1.5 sm:inline-flex sm:w-auto"
           >
             {UNITS.map((u, index) => (
               <button
@@ -228,7 +250,9 @@ export function Residences() {
                 tabIndex={active === index ? 0 : -1}
                 onClick={() => setActive(index)}
                 className={cn(
-                  "relative px-6 py-3 text-caption font-medium uppercase tracking-label transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:px-10",
+                  // Phones: two equal halves on one line; tighter tracking keeps
+                  // "1-Bedroom" from breaking at its hyphen down to 320px.
+                  "relative flex-1 whitespace-nowrap px-3 py-3 text-caption font-medium uppercase tracking-wide transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:flex-none sm:px-10 sm:tracking-label",
                   active === index
                     ? "text-primary-foreground"
                     : "text-foreground/70 hover:text-foreground",
@@ -284,18 +308,18 @@ export function Residences() {
                   </p>
                   <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
                     {unit.floorPlans.map((plan) => (
+                      // The plans are transparent black line art, so the card
+                      // stays white in both themes to keep the lines readable.
                       <figure
-                        key={plan.label}
-                        className="rounded-md border border-border bg-card p-4"
+                        key={plan.src}
+                        className="rounded-md border border-border bg-white p-4"
                       >
-                        <figcaption className="mb-3 text-caption font-medium uppercase tracking-label text-muted-foreground">
-                          {plan.label}
-                        </figcaption>
                         <Image
                           src={plan.src}
-                          alt={`${unit.name}, ${plan.label} floor plan`}
-                          width={600}
-                          height={600}
+                          alt={plan.alt}
+                          width={plan.width}
+                          height={plan.height}
+                          sizes="(min-width: 1024px) 20vw, (min-width: 640px) 45vw, 100vw"
                           className="h-auto w-full object-contain"
                         />
                       </figure>
