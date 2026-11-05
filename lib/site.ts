@@ -81,6 +81,14 @@ export const LEGAL = {
   registration: "DHSUD Certificate of Registration No. 0001076",
   licenseToSell: "License to Sell No. 0001215",
   issued: "Issued January 8, 2026",
+  /** The footer disclosure, worded the way the client supplied it. */
+  footer: {
+    domain: "aleeviacarterresidences.com",
+    address: "Rodriguez Street, Pasay City",
+    advertisementApproval: "DHSUD NCR AA#XXXX-XXX",
+    licenseToSell: "DHSUD LS#0001215",
+    completionDate: "31 March 2026",
+  },
 } as const;
 
 export const BROCHURE_PATH = "/brochure.pdf";

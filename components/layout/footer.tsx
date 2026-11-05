@@ -38,6 +38,14 @@ const COLUMNS: { heading: string; links: { label: string; href: string }[] }[] =
     },
   ];
 
+const LEGAL_LINES = [
+  LEGAL.footer.domain,
+  `Owner/Developer: ${SITE.developer}`,
+  `Address: ${LEGAL.footer.address}`,
+  `${LEGAL.footer.advertisementApproval} | ${LEGAL.footer.licenseToSell}`,
+  `Completion Date: ${LEGAL.footer.completionDate}`,
+];
+
 function isExternal(href: string) {
   return href.startsWith("http") || href.endsWith(".pdf");
 }
@@ -45,7 +53,9 @@ function isExternal(href: string) {
 export function Footer() {
   return (
     <footer className="sticky bottom-0 z-0 bg-emerald text-emerald-foreground">
-      <div className="main-container py-16 md:py-20">
+      {/* Extra bottom room below lg so the floating back-to-top and concierge
+          buttons never sit on top of the legal lines. */}
+      <div className="main-container pt-16 pb-36 md:pt-20 lg:pb-20">
         {/* Closing line + CTA */}
         <div className="flex flex-col gap-8 border-b border-emerald-foreground/15 pb-12 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-xl">
@@ -151,10 +161,12 @@ export function Footer() {
         </div>
 
         {/* Legal */}
-        <div className="flex flex-col gap-4 border-t border-emerald-foreground/15 pt-8 text-caption text-emerald-foreground/55 md:flex-row md:items-center md:justify-between">
-          <p className="max-w-2xl">
-            {SITE.developer}. {LEGAL.registration}, {LEGAL.licenseToSell}.
-          </p>
+        <div className="flex flex-col gap-4 border-t border-emerald-foreground/15 pt-8 text-caption text-emerald-foreground/55 lg:flex-row lg:items-end lg:justify-between">
+          <ul className="max-w-2xl space-y-1">
+            {LEGAL_LINES.map((line) => (
+              <li key={line}>{line}</li>
+            ))}
+          </ul>
           <p>
             &copy; {new Date().getFullYear()} {SITE.name}.
           </p>
